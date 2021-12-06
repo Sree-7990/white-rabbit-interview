@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  padding: 20px;
 }
 
 .App-logo {
@@ -27,6 +27,55 @@
 .App-link {
   color: #61dafb;
 }
+.card {
+  margin: 5px;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+}
+
+.field {
+  display: inline;
+  border-right: 1px solid gray;
+  padding: 0 20px;
+}
+
+.button {
+  margin: 15px;
+  border: 1px solid skyblue;
+  background-color: skyblue;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: white;
+  width: max-content;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.input-field {
+  margin: 10px;
+}
+
+.modal-container {
+  background-color: white;
+  padding: 20px;
+  position: fixed;
+  margin: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.input-field-container {
+  margin: 10px;
+}
+
+
 
 @keyframes App-logo-spin {
   from {
