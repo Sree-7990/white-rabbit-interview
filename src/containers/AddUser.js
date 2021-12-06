@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const AddUser = (props) => {
-  const [formValue, setFormValue] = useState({});  
+  const [formValue, setFormValue] = useState({});
 
   const onChangeValue = (type, event) => {
     if (["title", "first", "last"].includes(type)) {
@@ -21,7 +21,10 @@ const AddUser = (props) => {
 
   return (
     <div className="container">
-        <h2>Add User</h2>
+      <div className="close-button" onClick={props.closeModal}>
+        x
+      </div>
+      <h2>Add User</h2>
       <div className="input-field-container">
         <div className="label">Title</div>
         <input
@@ -80,8 +83,8 @@ const AddUser = (props) => {
         />
       </div>
 
-      <div className='button' onClick={submitUserData}>
-          Submit
+      <div className="button" onClick={submitUserData}>
+        Submit
       </div>
     </div>
   );

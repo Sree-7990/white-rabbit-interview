@@ -75,6 +75,18 @@
   margin: 10px;
 }
 
+.close-button {
+  display: fixed;
+  top:5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.close-button {
+  text-align: right;
+  color: red;
+}
+
 
 
 @keyframes App-logo-spin {

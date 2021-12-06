@@ -77,7 +77,7 @@ const UserListing = () => {
       </div>
       {showAddUser && (
         <div className="modal-container">
-          <AddUser submitUser={(data) => addUserData(data)} />
+          <AddUser submitUser={(data) => addUserData(data)} closeModal={()=>setShowAddUser(false)} />
         </div>
       )}
     </div>
